@@ -10,7 +10,7 @@ import { ref } from 'vue';
 
 import CalendarHeader from './CalendarHeader.vue';
 import CalendarGrid from './CalendarGrid.vue';
-import { getNextMonthDate, getPrevNextDate } from './utils';
+import { getNextMonthDate, getPrevMonthDate } from './utils';
 
 export default {
   name: 'Calendar',
@@ -22,7 +22,7 @@ export default {
     const date = ref(new Date());
 
     const onPrevMonth = () => {
-      date.value = getPrevNextDate(date.value);
+      date.value = getPrevMonthDate(date.value);
     };
     const onNextMonth = () => {
       date.value = getNextMonthDate(date.value);
