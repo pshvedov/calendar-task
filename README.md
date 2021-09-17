@@ -1,5 +1,7 @@
 # calendar-task
 
+Demo https://pshvedov.github.io/calendar-task/
+
 ## Project setup
 ```
 npm install
