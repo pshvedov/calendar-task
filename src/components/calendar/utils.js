@@ -18,7 +18,7 @@ export function getNextMonthDate(date) {
   return newDate;
 }
 
-export function getPrevNextDate(date) {
+export function getPrevMonthDate(date) {
   const newDate = new Date(date);
   newDate.setMonth(date.getMonth() - 1);
   return newDate;
